@@ -1,0 +1,70 @@
+<div class="container-fluid">
+  <div class="home-title my-3">
+    <h2 class="text-center my-2">MOVIES SECTION</h2>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="card-switch">
+    <label class="switch">
+      <input type="checkbox" class="toggle" id="toggle-slide">
+      <span class="slider"></span>
+      <span class="card-side"></span>
+
+      <div class="flip-card__inner">
+        <div class="flip-card__front">
+          <div class="title">Log in</div>
+          <form class="flip-card__form" (submit)="onSubmitLogin(frmlg)" #frmlg="ngForm">
+            <input class="flip-card__input" name="username" placeholder="Username" type="text" [(ngModel)]="username"
+              #usn="ngModel" required minlength="5">
+            <div class="text-danger alert-box" role="alert" *ngIf="usn.errors && usn.dirty">
+              <p *ngIf="usn.errors['required']">Username is required</p>
+              <p  *ngIf="usn.errors['minlength']">Username has at least 5 digits</p>
+            </div>
+
+            <div style="position: relative;">
+              <input class="flip-card__input " name="password" placeholder="Password" [(ngModel)]="password"
+                #pw="ngModel" required minlength="5" [type]="isShowed ? 'text' : 'password'">
+              <div class="text-danger alert-box-pw" role="alert" *ngIf="pw.errors && pw.dirty">
+                <p *ngIf="pw.errors['required']">Password is required</p>
+                <p *ngIf="pw.errors['minlength']">Password has at least 5 digits</p>
+              </div>
+              <button type="button" (click)="showPassword()" class="bg-transparent border-0"
+                style="position: absolute; top: 8px; right: 10px;"><i
+                  [classList]="isShowed ? 'fa fa-eye' : 'fa fa-eye-slash'" id="togglePassword"></i></button>
+            </div>
+            <button class="flip-card__btn" type="submit">Let`s go!</button>
+          </form>
+        </div>
+        <div class="flip-card__back">
+          <div class="title">Sign up</div>
+          <form class="flip-card__form" (submit)="onSubmitRegister(frmr)" #frmr="ngForm">
+            <input class="flip-card__input" placeholder="Username" type="text" name="regisUsername"
+              [(ngModel)]="regisUsername" #rsUsn="ngModel" minlength="5" required>
+            <div class="text-danger alert-box" role="alert" *ngIf="rsUsn.errors && rsUsn.dirty">
+              <p *ngIf="rsUsn.errors['required']">Username is required</p>
+              <p *ngIf="rsUsn.errors['minlength']">Username has at least 5 digits</p>
+            </div>
+            <input class="flip-card__input"placeholder="Name" type="text" name="regisName"
+              [(ngModel)]="regisName" #rsN="ngModel" required>
+            <div class="text-danger alert-box" role="alert" *ngIf="rsN.errors && rsN.dirty">
+              <p *ngIf="rsN.errors['required']">Name is required</p>
+            </div>
+            <div style="position: relative;">
+              <input class="flip-card__input " name="regisPassword" placeholder="Password" [(ngModel)]="regisPassword"
+                #rPw="ngModel" required minlength="5" [type]="isShowed ? 'text' : 'password'">
+              <button type="button" (click)="showPassword()" class="bg-transparent border-0"
+                style="position: absolute; top: 8px; right: 10px;"><i
+                  [classList]="isShowed ? 'fa fa-eye' : 'fa fa-eye-slash'" id="togglePassword"></i></button>
+              <div class="text-danger alert-box-pw" role="alert" *ngIf="rPw.errors && rPw.dirty">
+                <p *ngIf="rPw.errors['required']">Password is required</p>
+                <p *ngIf="rPw.errors['minlength']">Password has at least 5 digits</p>
+              </div>
+            </div>
+            <button class="flip-card__btn">Confirm!</button>
+          </form>
+        </div>
+      </div>
+    </label>
+  </div>
+</div>

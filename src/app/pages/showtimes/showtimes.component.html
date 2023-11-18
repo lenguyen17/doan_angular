@@ -1,0 +1,66 @@
+<div class="container-fluid show-time__component">
+  <div class="home-title my-3">
+    <h2 class="my-2 w-25">MOVIES SECTION</h2>
+  </div>
+  <a [routerLink]="'/movies/manage'" class="backt-to-manager">Back</a>
+  <div class="w-100">
+    <div class="movie-info-wrapper">
+      <div class="format-bg-top"></div>
+      <div class="main-movie-content " style="position: relative;">
+        <div class="row">
+          <div class="col-lg-3 text-center pt-4">
+            <img class="movie-image" [src]="movie.poster_path" width="100%" alt="">
+          </div>
+          <div class="col-lg-9">
+            <div class="w-100">
+              <h4 class="movie-title">{{ movie.title }}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="format-bg-bottom"></div>
+    </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Time</th>
+          <th scope="col">Threater</th>
+          <th scope="col">Status</th>
+          <th scope="col">View</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of listDate; let i = index">
+          <td>{{ item.date }}</td>
+          <td>{{ item.time }}</td>
+          <td>{{ item.room }}</td>
+          <td>{{ item.bookedChairs }}</td>
+          <td><button class="btn-edit" data-bs-toggle="modal" [attr.data-bs-target]="'#seat-status-'+i">
+              <i class="fa fa-eye text-success"></i>
+            </button>
+            <button class="btn-edit" (click) = deleteShowtimes(item)>
+              <i class="fa-regular fa-trash-can text-danger"></i>
+            </button>
+          </td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div *ngFor="let item of listDate; let i = index">
+  <div class="modal fade" id="seat-status-{{i}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body" style="height: 500px;">
+          <app-seats [seatsStatus]="item.seat_status"></app-seats>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

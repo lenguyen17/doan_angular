@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <div class="home-title my-3">
+    <h2 class="text-center my-2">MOVIES SECTION</h2>
+  </div>
+  <div class="row">
+    <div class="col-lg-3">
+      <img class="movie-image" [src]="movie.poster_path" width="100%" alt="">
+    </div>
+    <div class="col-lg-9">
+      <div class="movie-wrapper">
+        <p class="movie-title">{{ movie.title }}</p>
+        <p><b>Thời lượng: </b>{{ movie.runtime }} phút</p>
+        <p><b>Điểm đánh giá :</b> {{ movie.vote_average }}</p>
+        <p><b>Overview:</b> {{ movie.overview }}</p>
+        <button type="button" (click)="showTrailer = true;" class="button btn-booking me-3">
+          <span class="trailer"><span class="ms-2"> Xem trailer</span></span>
+        </button>
+        <button type="button" (click)="showBooking = true;" class="button btn-booking" data-bs-toggle="modal" data-bs-target="#bookingModal">
+          <span class="muave"><span class="ms-2"> Mua vé</span></span>
+        </button>
+        <div [ngClass]="showTrailer == true ? '' :'d-none' " id="box-movie"></div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <button type="button" class="btn-close d-none" id="close-modal-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+        <app-booking [movie]="movie" (closeModal)="closeModal()"></app-booking>
+    </div>
+  </div>
+</div>

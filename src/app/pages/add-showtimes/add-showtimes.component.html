@@ -1,0 +1,40 @@
+<div class="container">
+  <h4 class="text-center">{{ movie.title }}</h4>
+  <form action="" (submit)="onSubmitCreateShowtimes(f)" #f="ngForm">
+    <input type="number" name="movieId" class="d-none" value="{{movie.id}}" [(ngModel)]="movieId" #m="ngModel" required>
+    <div class="form-group my-2">
+      <label for="">Date</label>
+      <input type="date" class="form-control" name="date" [(ngModel)]="date" #d="ngModel" required>
+      <div class="text-danger" *ngIf="d.errors && d.dirty">
+        <p *ngIf="d.errors['required']">Date is required</p>
+      </div>
+    </div>
+    <div class="form-group my-2">
+      <label for="">Time</label>
+      <input type="time" class="form-control" name="time" [(ngModel)]="time" #t="ngModel" required>
+      <div class="text-danger" *ngIf="t.errors && t.dirty">
+        <p *ngIf="t.errors['required']">Time is required</p>
+      </div>
+    </div>
+    <div class="form-group my-2">
+      <label for="">Room</label>
+      <select name="room" class="form-control" [(ngModel)]="room" #r="ngModel" required>
+        <option value="{{ room.id }}" *ngFor="let room of rooms;">Theater {{ room.id }}: {{ room.seat_status.length }}
+          (positions)</option>
+      </select>
+      <div class="text-danger" *ngIf="r.errors && r.dirty">
+        <p *ngIf="r.errors['required']">Room is required</p>
+      </div>
+    </div>
+    <div class="form-group my-2">
+      <label for="">Price</label>
+      <input type="number" class="form-control" name="price" min="0" [(ngModel)]="price" #p="ngModel" required>
+      <div class="text-danger" *ngIf="p.errors && p.dirty">
+        <p *ngIf="p.errors['required']">Price is required</p>
+      </div>
+    </div>
+    <div class="text-end">
+      <button class="btn btn-outline-dark" type="submit">Create</button>
+    </div>
+  </form>
+</div>

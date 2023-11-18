@@ -1,0 +1,42 @@
+<div class="w-{{width}}" [ngClass]= "width==25 ? 'mt-5 mx-auto border p-3 bg-light':''">
+  <h3 class="text-center">CASH RECEIPT</h3>
+  <hr>
+  <div class="d-flex justify-content-between">
+    <p class="text-start">Shop name</p>
+    <p class="text-start">CGV</p>
+  </div>
+  <div class="d-flex justify-content-between">
+    <p class="text-start">Date</p>
+    <p class="text-start">{{ this.bill.createdAt }}</p>
+  </div>
+  <div class="d-flex justify-content-between">
+    <p class="text-start">Total</p>
+    <p class="text-start">{{ this.bill.total | vnCurrency }}</p>
+  </div>
+  <div class="bg-warning py-2 mb-2">
+    <h4 class="text-center">Movie ticket</h4>
+  </div>
+  <h4>{{ this.bill.movieTitle }}</h4>
+  <div class="d-flex justify-content-between">
+    <p>Date: {{ this.bill.date }}</p>
+    <p>Time: {{ this.bill.time }}</p>
+  </div>
+  <div class="d-flex justify-content-between">
+    <div class="">
+      <p>Seat: {{ seats }}</p>
+    </div>
+    <div class="">
+      <p>Theater: {{ this.bill.roomId }}</p>
+    </div>
+  </div>
+  <div class="" *ngIf="bill.drinks.length > 0">
+    <p>Drinks</p>
+    <p *ngFor="let drink of bill.drinks"> {{ drink.name }}</p>
+  </div>
+  <div class="text-center my-2">
+    <img alt='Barcode Generator TEC-IT'
+      src='https://barcode.tec-it.com/barcode.ashx?data={{ this.bill.id }}-{{ this.bill.movieId }}&code=Code128&translate-esc=on' />
+  </div>
+
+
+</div>

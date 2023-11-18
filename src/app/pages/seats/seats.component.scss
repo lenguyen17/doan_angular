@@ -1,0 +1,7 @@
+.seat-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Tạo 5 cột với chiều rộng bằng nhau */
+    gap: 10px;
+    width: 500px;
+    margin: 0 auto;
+}

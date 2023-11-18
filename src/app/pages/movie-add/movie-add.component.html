@@ -1,0 +1,73 @@
+<form #addMovieForm="ngForm" (ngSubmit)="onSubmit(addMovieForm)">
+    <div class="row pb-3 gx-3">
+      <!-- <div class="coolinput w-100 d-none">
+        <label for="input" class="text">ID:</label>
+        <input type="text" placeholder="ID here..." name="id" class="input" [(ngModel)]="movie.id" #id="ngModel"
+          value="">
+      </div> -->
+      <div class="coolinput w-100">
+        <label for="input" class="text">Title:</label>
+        <input type="text" placeholder="Title here..." name="title" class="input" [(ngModel)]="movie.title"
+          #title="ngModel" value="" required>
+        <div class="text-danger" *ngIf="title.errors && (title.dirty || isValidate)">
+          <span *ngIf="title.errors['required']">This field cannot be left empty</span>
+        </div>
+      </div>
+      <div class="coolinput w-50">
+        <label for="input" class="text">Vote average:</label>
+        <input type="number" min="0" max="10" placeholder="Vote average here..." name="vote_average"
+          [(ngModel)]="movie.vote_average" #vote_average="ngModel" class="input" value="" required>
+        <div class="text-danger" *ngIf="vote_average.errors && (vote_average.dirty || isValidate)">
+          <span *ngIf="vote_average.errors['required']">This field cannot be left empty</span>
+          <span *ngIf="vote_average.errors['min']">Average must be at least 0</span>
+          <span *ngIf="vote_average.errors['max']">Average must be at most 10</span>
+        </div>
+      </div>
+      <div class="coolinput w-50">
+        <label for="input" class="text">Run time:</label>
+        <input type="number" min="0" placeholder="Run time here..." name="runtime" [(ngModel)]="movie.runtime"
+          #runtime="ngModel" class="input" value="" required>
+        <div class="text-danger" *ngIf="runtime.errors && (runtime.dirty || isValidate)">
+          <span *ngIf="runtime.errors['required']">This field cannot be left empty</span>
+          <span *ngIf="runtime.errors['min']">Run time must be at least 0</span>
+        </div>
+      </div>
+      <div class="coolinput w-100">
+        <label for="input" class="text">Poster Url:</label>
+        <input type="text" placeholder="Poster path here..." name="poster_path" class="input"
+          [(ngModel)]="movie.poster_path" #poster_path="ngModel" value="" required="">
+        <div class="text-danger" *ngIf="poster_path.errors && (poster_path.dirty || isValidate)">
+          <span *ngIf="poster_path.errors['required']">This field cannot be left empty</span>
+        </div>
+      </div>
+      <div class="coolinput w-100">
+        <label for="input" class="text">Video url:</label>
+        <input type="text" placeholder="Video url here..." name="video_url" class="input" [(ngModel)]="movie.video_url"
+          #video_url="ngModel" value="" required>
+        <div class="text-danger" *ngIf="video_url.errors && (video_url.dirty || isValidate)">
+          <span *ngIf="video_url.errors['required']">This field cannot be left empty</span>
+        </div>
+      </div>
+      <div class="coolinput w-100">
+        <label for="input" class="text">Overview:</label>
+        <textarea type="text" placeholder="Overview here..." rows="10" name="overview" class="input"
+          [(ngModel)]="movie.overview" #overview="ngModel" value="" required=""></textarea>
+          <div class="text-danger" *ngIf="overview.errors && (overview.dirty || isValidate)">
+            <span *ngIf="overview.errors['required']">This field cannot be left empty</span>
+          </div>
+      </div>
+      <div class="button-wrapper w-100 d-flex justify-content-end mt-2">
+        <button type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path fill="currentColor"
+              d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z">
+            </path>
+          </svg>
+          <span>Save</span>
+        </button>
+      </div>
+  
+    </div>
+  </form>
+  

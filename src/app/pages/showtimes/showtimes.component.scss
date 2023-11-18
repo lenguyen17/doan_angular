@@ -1,0 +1,82 @@
+.show-time__component {
+  position: relative;
+}
+
+.backt-to-manager {
+  display: inline-block;
+  position: absolute;
+  top: 39px;
+  left: 11px;
+  border: 2px solid #b3b3b3;
+  cursor: pointer;
+  padding: 5px 12px;
+  transition: all ease 0.2s;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
+.backt-to-manager:hover {
+  box-shadow: 2px 3px 5px 0px rgba(166, 166, 166, 0.3);
+
+}
+
+.home-title {
+  background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg_h3_line.jpg) repeat-x scroll left center rgba(0, 0, 0, 0);
+  height: 60px;
+  text-align: center;
+  width: 100%;
+
+  h2 {
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/h3_movie_selection.gif) no-repeat scroll center center / 406px 41px #FDFCF0;
+    display: inline-block;
+    width: 425px !important;
+    color: transparent;
+  }
+}
+
+.movie-info-wrapper {
+  background-color: #000;
+  margin-top: 30px;
+  font-size: 0;
+  width: 100%;
+
+  .format-bg-top {
+    width: 100%;
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-top-seatmap.png) repeat-x top left transparent;
+    height: 8px;
+    overflow: hidden;
+  }
+
+  .format-bg-bottom {
+    width: 100%;
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-bottom-seatmap.png) repeat-x bottom left transparent;
+    height: 8px;
+    overflow: hidden;
+  }
+
+  .main-movie-content {
+    height: 200px;
+
+    .movie-image {
+      width: 100px;
+    }
+
+    .movie-title {
+      color: #FDFCF0;
+      font-size: 42px;
+      width: 100%;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.btn-edit {
+  border: none;
+  background-color: transparent;
+  margin-right: 12px;
+  font-size: 20px;
+}

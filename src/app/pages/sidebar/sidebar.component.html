@@ -1,0 +1,74 @@
+<div class="layout has-sidebar fixed-sidebar fixed-header m-0">
+  <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
+    <div class="sidebar-layout">
+      <div class="pt-3 pb-3">
+        <div class="pro-sidebar-logo text-center">
+          <img class="mx-auto" src="https://www.cgv.vn/skin/frontend/cgv/default/images/cgvlogo.png" alt="sidebar background" />
+        </div>
+      </div>
+      <div class="sidebar-content">
+        <nav class="menu open-current-submenu">
+          <ul>
+            <li class="menu-header text-light">
+              <span class="menu-icon">
+                <!-- <i class="fa fa-film" aria-hidden="true"></i> -->
+              </span><span> MOVIES </span>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="'/'">
+                <span class="menu-icon">
+                  <i class="ri-calendar-fill"></i>
+                </span>
+                <span class="menu-title">LIVE</span>
+                <span class="menu-suffix">
+                  <span class="badge bg-danger">Hot</span>
+                </span>
+              </a>
+            </li>
+            
+
+            <li class="menu-item">
+              <a [routerLink]="'movies/manage'" >
+                <span class="menu-icon">
+                  <!-- <i class="fa fa-film" aria-hidden="true"></i> -->
+                </span>
+                <span class="menu-title">Manage</span>
+              </a>
+            </li>
+
+            <li class="menu-header text-light" style="padding-top: 20px"><span> BILL </span></li>
+            <li class="menu-item">
+              <a [routerLink]="'bills'">
+                <span class="menu-icon">
+                  <i class="ri-book-2-fill"></i>
+                </span>
+                <span class="menu-title">Manage</span>
+                <span class="menu-suffix">
+                  <span class="badge secondary">Main</span>
+                </span>
+              </a>
+            </li>
+            <li class="menu-header text-light" style="padding-top: 20px"><span> USER </span></li>
+            <li class="menu-item login-item" *ngIf="!isLoggedIn()">
+              <a routerLink="auth/login">
+                <span class="menu-icon">
+                  <i class="ri-calendar-fill"></i>
+                </span>
+                <span class="menu-title">Login</span>
+              </a>
+            </li>
+            <li class="menu-item" *ngIf="isLoggedIn()">
+              <a routerLink="auth/login" (click)="logout()">
+                <span class="menu-icon">
+                  <i class="ri-calendar-fill"></i>
+                </span>
+                <span class="menu-title">Logout</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      
+    </div>
+  </aside>
+</div>

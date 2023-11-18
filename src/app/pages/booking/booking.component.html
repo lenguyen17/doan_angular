@@ -1,0 +1,87 @@
+
+<div id="carousel-booking" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+  <div class="px-4 wrapper-button-page">
+    <button class="btn btn-outline-dark ms-3" [ngClass] ="currentPage == 1 ? 'disabled': ''" (click)="prevPageAction()">Trước</button>
+    <button class="btn btn-outline-dark me-3"  [ngClass] = "currentPage == 3 ? 'd-none': 'false'" (click)="nextPageAction()">Sau</button>
+      <button class="btn btn-danger btn-checkout" [ngClass] ="currentPage != 3 ? 'd-none': 'false'"  (click)="thanhtoan()">Thanh toán</button>
+  </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container-fluid booking-wrapper">
+            <h4>Danh mục suất chiếu</h4>
+            <div class="d-flex date-wrapper">
+              <div class="my-2 date-item" *ngFor="let item of movie.showtimes; let i = index">
+                <!-- Click vào ngày sẽ show ra lịch chiếu của ngày đó, default sẽ là ngày gần nhất -->
+                <button class="btn-select-date" [ngClass]="selectedDate == i ? 'selected' : ''"
+                  (click)="selectDate(i)">{{ item.date }}</button>
+              </div>
+            </div>
+            
+            <div class="time-wrapper">
+              <div class="d-flex w-100" *ngFor="let item of movie.showtimes; let i = index">
+                <div class="time-item d-flex" *ngIf="selectedDate == i">
+                  <div class="my-2" *ngFor="let timeItem of item.times; let j = index">
+                    <!-- Sau khi click vào time sẽ show ra chổ ngồi -->
+                    <button class="btn-select-time" [ngClass]="selectedTime == j ? 'selected' : ''" (click)="selectTime(j)">{{ timeItem.time }}</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="carousel-item ">
+          <div class="container-fluid booking-wrapper">
+            <h4 class="text-start">Chọn đồ uống</h4>
+            <div class="booking-item-wrapper">
+              <div class="">
+                <div class="w-100" *ngFor="let item of movie.showtimes; let i = index">
+                  <div class="w-100" *ngIf="selectedDate == i">
+                    <div class="w-100" *ngFor="let timeItem of item.times; let j = index">
+                      <app-seats [seatsStatus]="timeItem.seat_status" *ngIf="selectedTime == j"
+                      (selectedSeats)="selectSeats($event)"></app-seats>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container-fluid booking-wrapper">
+          <h4>Chọn đồ uống</h4>
+          <div class="booking-item-wrapper">
+            <div class="my-2">
+              <app-drinks [drinks]="drinks" (selectedDrinks)="selectDrinks($event)"></app-drinks>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="total-wrapper">
+      <table>
+        <tr>
+          <td style="width: 100px;">Tickets</td>
+          <td class="text-end" style="width: 200px;">{{this.ticketTotal  | vnCurrency}}</td>
+        </tr>
+        <tr>
+          <td>Combo</td>
+          <td class="text-end">{{this.drinksTotal | vnCurrency}}</td>
+        </tr>
+        <tr>
+          <th>Total</th>
+          <th class="text-end text-danger">{{this.total | vnCurrency}}</th>
+        </tr>
+      </table>
+    </div>
+    <div class="d-none">
+        <button class="btn btn-primary" id="prev-btn" type="button" data-bs-target="#carousel-booking" data-bs-slide="prev" >
+            Previous
+          </button>
+          <button class="btn btn-primary" id="next-btn" type="button" data-bs-target="#carousel-booking" data-bs-slide="next">
+            Next
+          </button>
+    </div>
+  </div>

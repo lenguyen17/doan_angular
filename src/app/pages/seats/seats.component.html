@@ -1,0 +1,9 @@
+<div class="container text-center pt-2">
+  <h4 class="text-center my-4">Màn hình chiếu</h4>
+  <div class="seat-wrapper">
+    <button [id]="seat.position"
+      [ngClass]="(seat.available) ? 'btn mx-2 btn-outline-success '  : '' + seatsSelected.includes(seat.position) ? 'btn mx-2 btn-warning' : ''"
+      *ngFor="let seat of seatsStatus" (click)="selectSeat(seat.position)">
+      {{ seat.position }}</button>
+</div>
+

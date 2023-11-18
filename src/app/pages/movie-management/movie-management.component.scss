@@ -1,0 +1,179 @@
+.movie-manage__content {
+  position: relative;
+}
+
+.home-title {
+  background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg_h3_line.jpg) repeat-x scroll left center rgba(0, 0, 0, 0);
+  height: 60px;
+  text-align: center;
+  width: 100%;
+
+  h2 {
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/h3_movie_selection.gif) no-repeat scroll center center / 406px 41px #FDFCF0;
+    display: inline-block;
+    width: 425px !important;
+    color: transparent;
+  }
+}
+.movie-manage__control-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 46px;
+  margin-top: -10px;
+  padding-bottom: 18px;
+}
+
+.btn-addnew-movie {
+  border-radius: 3px;
+  border: 2px solid #b3b3b3;
+  cursor: pointer;
+  padding: 5px 12px;
+  transition: all ease 0.2s;
+  font-weight: 700;
+  
+  i {
+    color: #f47272;
+    transition: all ease 0.5s;
+
+  }
+}
+.btn-addnew-movie:hover {
+  box-shadow: 2px 3px 5px 0px rgba(166, 166, 166, 0.3);
+  i {
+    transform: rotate(360deg);
+  }
+}
+
+tbody {
+  .movie-title {
+    p {
+      width: 200px;
+      // white-space: nowrap; 
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+  }
+
+  .movie-overview {
+    p {
+      width: 90%;
+      height: 100px;
+      white-space: normal;
+      overflow: hidden;
+      text-align: justify;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .movie-poster {
+    width: 100px;
+    text-align: center;
+  }
+
+  .movie-video {
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .movie-average {
+    width: 100px;
+  }
+
+  .movie-option {
+    width: 200px;
+
+    button {
+      i {
+        font-size: 20px;
+      }
+    }
+
+    .btn-view {
+      border: none;
+      background-color: transparent;
+      margin-right: 12px;
+
+    }
+
+    .btn-edit {
+      border: none;
+      background-color: transparent;
+      margin-right: 12px;
+
+    }
+  }
+}
+.modal-content {
+  background-color: #FDFCF0;
+  padding: 0 50px;
+}
+
+.movie-edit-wrapper {
+  background-color: #FDFCF0;
+  min-height: 700px;
+}
+.showtimes-edit-wrapper {
+  background-color: #FDFCF0;
+}
+
+.search-container {
+  width: 250px;
+  margin: 24px 0;
+  .InputContainer {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    padding-left: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+  }
+
+  .input {
+    width: 170px;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.9em;
+    caret-color: rgb(255, 81, 0);
+  }
+
+  .labelforsearch {
+    cursor: pointer;
+    padding: 0px 12px;
+  }
+
+  .searchIcon {
+    width: 13px;
+  }
+
+
+  .micIcon {
+    width: 12px;
+  }
+
+
+  .searchIcon path {
+    fill: rgb(114, 114, 114);
+  }
+
+  .micIcon path {
+    fill: rgb(255, 81, 0);
+  }
+
+  .micButton:hover {
+    background-color: rgb(255, 230, 230);
+    transition-duration: .3s;
+  }
+}

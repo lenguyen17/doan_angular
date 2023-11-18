@@ -1,0 +1,118 @@
+<div class="container-fluid movie-manage__content">
+  <div class="home-title my-3">
+    <h2 class="my-2 w-25">MOVIES SECTION</h2>
+  </div>
+  <div class="movie-manage__control-wrapper">
+    
+    <div class="search-container">
+      <div class="InputContainer">
+        <input type="text" name="text" class="input" id="input" [(ngModel)]="searchTxt" placeholder="Search" (change)="searchMovie()">
+        <label for="input" class="labelforsearch" (click)="searchMovie()">
+          <svg viewBox="0 0 512 512" class="searchIcon">
+            <path
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+            </path>
+          </svg>
+        </label>
+        <div class="border"></div>
+      </div>
+    </div>
+    <button class="btn-addnew-movie" data-bs-toggle="modal" data-bs-target="#addNewMovieModal">
+      <i class="fa-solid fa-circle-plus"></i> Add New 
+    </button>
+  </div>
+  <div class="w-100">
+    <div class="movie-manage__table-wrapper">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Poster</th>
+            <th scope="col">Title</th>
+            <th scope="col" style="min-width: 73px;">Run time</th>
+            <th scope="col">Overview</th>
+            <th scope="col">Average</th>
+            <th scope="col">Video Url</th>
+            <th scope="col">Show times</th>
+            <th scope="col">Option</th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr *ngFor="let movie of listMovieSearch">
+            <td>{{ movie.id }}</td>
+            <td class="movie-poster"><img src="{{ movie.poster_path }}" class="w-100" alt=""></td>
+            <td class="movie-title">
+              <p>{{ movie.title }}</p>
+            </td>
+            <td class="movie-average">
+              <p>{{ movie.runtime }} '</p>
+            </td>
+            <td class="movie-overview">
+              <p>{{ movie.overview }}</p>
+            </td>
+            <td class="movie-average">{{ movie.vote_average }}</td>
+            <td>
+              <p class="movie-video"><a target="_blank" href="{{ movie.video_url }}"><i class="fa-solid fa-link me-2"></i>Link</a></p>
+            </td>
+            <td class="movie-option" style="min-width: 105px;">
+              <button class="btn-view" (click)="redirectTo(movie.id)"><i class="fa fa-eye text-success" aria-hidden="true"></i></button>
+              <button class="btn-edit" (click)="addShowTimes(movie)" data-bs-toggle="modal" data-bs-target="#addShowtimesModalLabel">
+                <i class="fas fa-plus text-success"></i>
+              </button>
+            </td>
+            <td class="movie-option" style="min-width: 105px;">
+  
+              <button class="btn-edit" (click)="showMovie(movie)" data-bs-toggle="modal" data-bs-target="#movieInfoModal">
+                <i class="fa-regular fa-pen-to-square text-primary"></i>
+              </button>
+              <button class="btn-view" (click)="deleteMovie(movie)">
+                <i class="fa-regular fa-trash-can text-danger"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="addNewMovieModal" tabindex="-1" aria-labelledby="movieInfoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body movie-edit-wrapper ">
+        <h4 class="my-3 text-center">Add New Movie</h4>
+        <app-movie-add (addNewMovie)="addNewMovie($event)"></app-movie-add>
+        <button type="button" class="d-none" id="closeAddNewMovieModal" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="movieInfoModal" tabindex="-1" aria-labelledby="movieInfoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body movie-edit-wrapper ">
+        <h4 class="my-3 text-center">MOVIE ID: {{ movie.id }}</h4>
+        <app-movie-edit [movie]="movie" (newMovieData)="updateMovie($event)"></app-movie-edit>
+        <button type="button" class="d-none" id="closeModal" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="addShowtimesModalLabel" tabindex="-1" aria-labelledby="addShowtimesModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body showtimes-edit-wrapper ">
+        <div class="text-end">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <app-add-showtimes [movie]="movie" (emitCreateShowtimes)="createShowtimes($event)"></app-add-showtimes>
+        <button type="button" class="d-none" id="closeModalSt" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

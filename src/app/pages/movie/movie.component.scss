@@ -1,0 +1,95 @@
+.home-title {
+  background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg_h3_line.jpg) repeat-x scroll left center rgba(0, 0, 0, 0);
+  height: 60px;
+  text-align: center;
+  width: 100%;
+
+  h2 {
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/h3_movie_selection.gif) no-repeat scroll center center / 406px 41px #FDFCF0;
+    display: inline-block;
+    width: 425px !important;
+    color: transparent;
+  }
+}
+
+.movie-wrapper {
+  transition: 0.5s ease;
+
+  a {
+    color: black;
+    text-decoration: none;
+
+    .movie-image {
+      border-radius: 8px;
+    }
+
+    .movie-title {
+      font-weight: 700;
+      color: #000;
+      font-size: 18px;
+      margin-top: 8px;
+    }
+
+
+  }
+
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+
+.search-container {
+  width: 250px;
+  margin: 24px 0;
+  .InputContainer {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    padding-left: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+  }
+
+  .input {
+    width: 170px;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.9em;
+    caret-color: rgb(255, 81, 0);
+  }
+
+  .labelforsearch {
+    cursor: text;
+    padding: 0px 12px;
+  }
+
+  .searchIcon {
+    width: 13px;
+  }
+
+
+  .micIcon {
+    width: 12px;
+  }
+
+
+  .searchIcon path {
+    fill: rgb(114, 114, 114);
+  }
+
+  .micIcon path {
+    fill: rgb(255, 81, 0);
+  }
+
+  .micButton:hover {
+    background-color: rgb(255, 230, 230);
+    transition-duration: .3s;
+  }
+}

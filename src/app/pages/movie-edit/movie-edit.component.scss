@@ -1,0 +1,93 @@
+h4 {
+    font-family: "Pacifico", cursive;
+    font-weight: 700;
+  }
+
+  .coolinput {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: static;
+    margin-bottom: 12px;
+    .text-danger {
+      font-size: 12px !important;
+    }
+  }
+
+  .coolinput label.text {
+    font-size: 0.75rem;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 7px;
+    padding: 0 3px;
+    background: #FDFCF0;
+    width: fit-content;
+  }
+
+  .coolinput input.input {
+    padding: 11px 10px;
+    font-size: 0.75rem;
+    border: 2px #CCCCCC solid;
+    border-radius: 5px;
+    background: #FDFCF0;
+  }
+
+  .coolinput input[type=text].input:focus {
+    outline: none;
+  }
+
+  .coolinput textarea.input {
+    padding: 11px 10px;
+    font-size: 0.75rem;
+    border: 2px #CCCCCC solid;
+    border-radius: 5px;
+    background: #FDFCF0;
+  }
+
+
+  .coolinput textarea.input:focus {
+    outline: none;
+  }
+
+  .button-wrapper {
+    button {
+      display: flex;
+      align-items: center;
+      font-family: inherit;
+      font-weight: 500;
+      font-size: 17px;
+      padding: 0.3em 1.3em 0.3em 0.9em;
+      color: #000;
+      background: transparent;
+      // background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      border: 1px solid #000;
+      letter-spacing: 0.05em;
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+    button svg {
+      margin-right: 3px;
+      transform: rotate(30deg);
+      transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    }
+
+    button span {
+      transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    }
+
+    button:hover svg {
+      transform: translateX(5px) rotate(90deg);
+    }
+
+    button:hover span {
+      transform: translateX(7px);
+    }
+  }

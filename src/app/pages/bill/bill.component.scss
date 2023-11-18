@@ -1,0 +1,33 @@
+.home-title {
+  background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg_h3_line.jpg) repeat-x scroll left center rgba(0, 0, 0, 0);
+  height: 60px;
+  text-align: center;
+  width: 100%;
+
+  h2 {
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/h3_movie_selection.gif) no-repeat scroll center center / 406px 41px #FDFCF0;
+    display: inline-block;
+    width: 425px !important;
+    color: transparent;
+  }
+}
+
+.movie-title {
+  // min-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-option {
+  border: none;
+  background-color: transparent;
+  margin-right: 12px;
+  padding: 0px;
+  margin-top: -14px;
+}
+
+.date-input {
+  width: 180px;
+  margin: 0 17px;
+}

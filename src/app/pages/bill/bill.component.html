@@ -1,0 +1,75 @@
+<div class="container-fluid">
+  <div class="home-title my-3">
+    <h2 class="text-center my-2">MOVIES SECTION</h2>
+  </div>
+  <div class="w-100">
+    <div class="">
+      <div class="w-100 d-flex">
+        <label for="" class=" mt-2 me-2">From: </label>
+        <input type="date" class="form-control date-input" [(ngModel)]="fromDate">
+        <label for="" class=" mt-2 me-2">To: </label>
+        <input type="date" class="form-control date-input" [(ngModel)]="toDate">
+        <button class="btn btn-outline-dark me-3" (click)="search()">Search</button>
+        <button class="btn btn-outline-success" (click)="this.searchBills = this.bills">All</button>
+      </div>
+
+    </div>
+    <table class="table  mt-3">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Created At</th>
+          <th scope="col">Movie Title</th>
+          <th scope="col">Seats</th>
+          <th scope="col">Total</th>
+          <th scope="col">Option</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let bill of searchBills">
+          <td>{{ bill.id }}</td>
+          <td>{{ bill.createdAt }}</td>
+          <td class="d-flex">
+            <button class="btn-option" (click)="redirectTo(bill.movieId)">
+              <i class="fa fa-eye text-success" aria-hidden="true"></i>
+            </button>
+            <p class="movie-title">{{ bill.movieTitle }}</p>
+          </td>
+          <td>{{ bill.seats.length }}</td>
+          <td>{{ bill.total | vnCurrency }}</td>
+          <td>
+            <button class="btn-option" data-bs-toggle="modal" [attr.data-bs-target]="'#billInfoModal-'+bill.id">
+              <i class="fa fa-eye text-primary"></i>
+            </button>
+            <button class="btn-option" (click)="deleteBill(bill)">
+              <i class="fa-regular fa-trash-can text-danger"></i>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="billInfoModal-{{ bill.id }}" data-bs-backdrop="static" data-bs-keyboard="false"
+              tabindex="-1" aria-labelledby="billInfoModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="w-100 text-end">
+                      <button type="button" class="btn-close me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <app-bill-info [bill]="bill"></app-bill-info>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </td>
+        </tr>
+        <tr>
+          <th colspan="4" class="text-center">Income</th>
+          <th colspan="2" class="text-danger">{{ getTotal() | vnCurrency }}</th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

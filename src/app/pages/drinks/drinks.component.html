@@ -1,0 +1,17 @@
+<div class="row drinks-wrapper">
+  <div class="col-lg-6 d-flex my-3" *ngFor="let drink of drinks">
+    <div class="image-wrapper">
+      <img src="{{ drink.url }}" class="w-100" alt="">
+    </div>
+    <div class="drink-info-wrapper">
+      <b class="mb-3">{{ drink.name }}</b>
+      <p [innerHTML]="drink.description"></p>
+      <p class="text-danger">{{ drink.price | vnCurrency}}</p>
+    </div>
+
+    <label class="container-checkbox">
+        <input  type="checkbox" (change)="selectDrinks(drink)">
+        <div class="checkmark"></div>
+      </label>
+  </div>
+</div>
