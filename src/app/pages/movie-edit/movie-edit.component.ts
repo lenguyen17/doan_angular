@@ -17,7 +17,7 @@ export class MovieEditComponent {
 
   onSubmit(form: NgForm){
     if(form.valid){
-      this.newMovieData.emit(form);
+      this.newMovieData.emit(form.value);
     }
   }
 

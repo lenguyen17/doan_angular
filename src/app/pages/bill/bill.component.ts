@@ -75,6 +75,8 @@ export class BillComponent {
     })
     .then((result: any) => {
       if (result.isConfirmed) {
+        this.bills = this.bills.filter(b => b.id !== bill.id);
+        this.searchBills = this.searchBills.filter(b => b.id !== bill.id);
         this.billService.deleteBill(bill)
           .then((res) => {
             Swal.fire({

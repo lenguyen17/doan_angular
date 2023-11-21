@@ -35,7 +35,7 @@
   </div>
   <div class="text-center my-2">
     <img alt='Barcode Generator TEC-IT'
-      src='https://barcode.tec-it.com/barcode.ashx?data={{ this.bill.id }}-{{ this.bill.movieId }}&code=Code128&translate-esc=on' />
+      src='https://barcode.tec-it.com/barcode.ashx?data={{ this.bill.id.toString().substring(5) }}-{{ this.bill.movieId }}&code=Code128&translate-esc=on' />
   </div>
 
 

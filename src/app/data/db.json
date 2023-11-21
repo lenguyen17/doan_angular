@@ -54,330 +54,6 @@
       "video_url": "https://www.youtube.com/embed/uwmDH12MAA4",
       "showtimes": [
         {
-          "show_id": 1700304657448,
-          "date": "19/11/2023",
-          "times": [
-            {
-              "room_id": 1,
-              "time": "07:52",
-              "seat_status": [
-                {
-                  "seat_id": 1,
-                  "position": "A1",
-                  "available": true
-                },
-                {
-                  "seat_id": 2,
-                  "position": "A2",
-                  "available": true
-                },
-                {
-                  "seat_id": 3,
-                  "position": "A3",
-                  "available": true
-                },
-                {
-                  "seat_id": 4,
-                  "position": "A4",
-                  "available": true
-                },
-                {
-                  "seat_id": 5,
-                  "position": "A5",
-                  "available": true
-                },
-                {
-                  "seat_id": 6,
-                  "position": "B1",
-                  "available": true
-                },
-                {
-                  "seat_id": 7,
-                  "position": "B2",
-                  "available": true
-                },
-                {
-                  "seat_id": 8,
-                  "position": "B3",
-                  "available": true
-                },
-                {
-                  "seat_id": 9,
-                  "position": "B4",
-                  "available": true
-                },
-                {
-                  "seat_id": 10,
-                  "position": "B5",
-                  "available": true
-                },
-                {
-                  "seat_id": 11,
-                  "position": "C1",
-                  "available": true
-                },
-                {
-                  "seat_id": 12,
-                  "position": "C2",
-                  "available": true
-                },
-                {
-                  "seat_id": 13,
-                  "position": "C3",
-                  "available": true
-                },
-                {
-                  "seat_id": 14,
-                  "position": "C4",
-                  "available": true
-                },
-                {
-                  "seat_id": 15,
-                  "position": "C5",
-                  "available": true
-                },
-                {
-                  "seat_id": 16,
-                  "position": "D1",
-                  "available": true
-                },
-                {
-                  "seat_id": 17,
-                  "position": "D2",
-                  "available": true
-                },
-                {
-                  "seat_id": 18,
-                  "position": "D3",
-                  "available": true
-                },
-                {
-                  "seat_id": 19,
-                  "position": "D4",
-                  "available": true
-                },
-                {
-                  "seat_id": 20,
-                  "position": "D5",
-                  "available": true
-                }
-              ]
-            },
-            {
-              "room_id": 1,
-              "time": "07:58",
-              "seat_status": [
-                {
-                  "seat_id": 1,
-                  "position": "A1",
-                  "available": true
-                },
-                {
-                  "seat_id": 2,
-                  "position": "A2",
-                  "available": true
-                },
-                {
-                  "seat_id": 3,
-                  "position": "A3",
-                  "available": true
-                },
-                {
-                  "seat_id": 4,
-                  "position": "A4",
-                  "available": true
-                },
-                {
-                  "seat_id": 5,
-                  "position": "A5",
-                  "available": true
-                },
-                {
-                  "seat_id": 6,
-                  "position": "B1",
-                  "available": true
-                },
-                {
-                  "seat_id": 7,
-                  "position": "B2",
-                  "available": true
-                },
-                {
-                  "seat_id": 8,
-                  "position": "B3",
-                  "available": true
-                },
-                {
-                  "seat_id": 9,
-                  "position": "B4",
-                  "available": true
-                },
-                {
-                  "seat_id": 10,
-                  "position": "B5",
-                  "available": true
-                },
-                {
-                  "seat_id": 11,
-                  "position": "C1",
-                  "available": true
-                },
-                {
-                  "seat_id": 12,
-                  "position": "C2",
-                  "available": true
-                },
-                {
-                  "seat_id": 13,
-                  "position": "C3",
-                  "available": true
-                },
-                {
-                  "seat_id": 14,
-                  "position": "C4",
-                  "available": true
-                },
-                {
-                  "seat_id": 15,
-                  "position": "C5",
-                  "available": true
-                },
-                {
-                  "seat_id": 16,
-                  "position": "D1",
-                  "available": true
-                },
-                {
-                  "seat_id": 17,
-                  "position": "D2",
-                  "available": true
-                },
-                {
-                  "seat_id": 18,
-                  "position": "D3",
-                  "available": true
-                },
-                {
-                  "seat_id": 19,
-                  "position": "D4",
-                  "available": true
-                },
-                {
-                  "seat_id": 20,
-                  "position": "D5",
-                  "available": true
-                }
-              ]
-            },
-            {
-              "room_id": 1,
-              "time": "08:31",
-              "seat_status": [
-                {
-                  "seat_id": 1,
-                  "position": "A1",
-                  "available": true
-                },
-                {
-                  "seat_id": 2,
-                  "position": "A2",
-                  "available": true
-                },
-                {
-                  "seat_id": 3,
-                  "position": "A3",
-                  "available": true
-                },
-                {
-                  "seat_id": 4,
-                  "position": "A4",
-                  "available": true
-                },
-                {
-                  "seat_id": 5,
-                  "position": "A5",
-                  "available": true
-                },
-                {
-                  "seat_id": 6,
-                  "position": "B1",
-                  "available": true
-                },
-                {
-                  "seat_id": 7,
-                  "position": "B2",
-                  "available": true
-                },
-                {
-                  "seat_id": 8,
-                  "position": "B3",
-                  "available": true
-                },
-                {
-                  "seat_id": 9,
-                  "position": "B4",
-                  "available": true
-                },
-                {
-                  "seat_id": 10,
-                  "position": "B5",
-                  "available": true
-                },
-                {
-                  "seat_id": 11,
-                  "position": "C1",
-                  "available": true
-                },
-                {
-                  "seat_id": 12,
-                  "position": "C2",
-                  "available": true
-                },
-                {
-                  "seat_id": 13,
-                  "position": "C3",
-                  "available": true
-                },
-                {
-                  "seat_id": 14,
-                  "position": "C4",
-                  "available": true
-                },
-                {
-                  "seat_id": 15,
-                  "position": "C5",
-                  "available": true
-                },
-                {
-                  "seat_id": 16,
-                  "position": "D1",
-                  "available": true
-                },
-                {
-                  "seat_id": 17,
-                  "position": "D2",
-                  "available": true
-                },
-                {
-                  "seat_id": 18,
-                  "position": "D3",
-                  "available": true
-                },
-                {
-                  "seat_id": 19,
-                  "position": "D4",
-                  "available": true
-                },
-                {
-                  "seat_id": 20,
-                  "position": "D5",
-                  "available": true
-                }
-              ]
-            }
-          ]
-        },
-        {
           "show_id": 1,
           "date": "22/11/2023",
           "times": [
@@ -424,19 +100,19 @@
                 {
                   "seat_id": 7,
                   "position": "B2",
-                  "available": true,
+                  "available": false,
                   "price": 79000
                 },
                 {
                   "seat_id": 8,
                   "position": "B3",
-                  "available": true,
+                  "available": false,
                   "price": 79000
                 },
                 {
                   "seat_id": 9,
                   "position": "B4",
-                  "available": true,
+                  "available": false,
                   "price": 79000
                 },
                 {
@@ -736,6 +412,138 @@
                   "seat_id": 20,
                   "position": "D5",
                   "available": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "show_id": 1700366655311,
+          "date": "21/11/2023",
+          "times": [
+            {
+              "room_id": 6,
+              "time": "09:00",
+              "seat_status": [
+                {
+                  "seat_id": 1,
+                  "position": "A1",
+                  "available": true,
+                  "price": 79000
+                },
+                {
+                  "seat_id": 2,
+                  "position": "A2",
+                  "available": true,
+                  "price": 79000
+                },
+                {
+                  "seat_id": 3,
+                  "position": "A3",
+                  "available": true,
+                  "price": 79000
+                },
+                {
+                  "seat_id": 4,
+                  "position": "A4",
+                  "available": true,
+                  "price": 79000
+                },
+                {
+                  "seat_id": 5,
+                  "position": "A5",
+                  "available": true,
+                  "price": 79000
+                },
+                {
+                  "seat_id": 6,
+                  "position": "B1",
+                  "available": true,
+                  "price": 79000
+                },
+                {
+                  "seat_id": 7,
+                  "position": "B2",
+                  "available": false,
+                  "price": 79000
+                },
+                {
+                  "seat_id": 8,
+                  "position": "B3",
+                  "available": false,
+                  "price": 79000
+                },
+                {
+                  "seat_id": 9,
+                  "position": "B4",
+                  "available": false,
+                  "price": 79000
+                },
+                {
+                  "seat_id": 10,
+                  "position": "B5",
+                  "available": true,
+                  "price": 79000
+                },
+                {
+                  "seat_id": 11,
+                  "position": "C1",
+                  "available": true,
+                  "price": 79000
+                },
+                {
+                  "seat_id": 12,
+                  "position": "C2",
+                  "available": true,
+                  "price": 79000
+                },
+                {
+                  "seat_id": 13,
+                  "position": "C3",
+                  "available": false,
+                  "price": 79000
+                },
+                {
+                  "seat_id": 14,
+                  "position": "C4",
+                  "available": false,
+                  "price": 79000
+                },
+                {
+                  "seat_id": 15,
+                  "position": "C5",
+                  "available": true,
+                  "price": 79000
+                },
+                {
+                  "seat_id": 16,
+                  "position": "D1",
+                  "available": true,
+                  "price": 79000
+                },
+                {
+                  "seat_id": 17,
+                  "position": "D2",
+                  "available": true,
+                  "price": 79000
+                },
+                {
+                  "seat_id": 18,
+                  "position": "D3",
+                  "available": true,
+                  "price": 79000
+                },
+                {
+                  "seat_id": 19,
+                  "position": "D4",
+                  "available": true,
+                  "price": 79000
+                },
+                {
+                  "seat_id": 20,
+                  "position": "D5",
+                  "available": true,
+                  "price": 79000
                 }
               ]
             }
@@ -26473,6 +26281,74 @@
       "drinks": [],
       "total": 79000,
       "createdAt": "11/16/2023, 10:11:42 PM"
+    },
+    {
+      "id": 1700366686442,
+      "movieId": 609681,
+      "roomId": 6,
+      "movieTitle": "The Marvels",
+      "date": "21/11/2023",
+      "time": "09:00",
+      "seats": [
+        {
+          "seat_id": 7,
+          "position": "B2",
+          "available": false,
+          "price": 79000
+        },
+        {
+          "seat_id": 8,
+          "position": "B3",
+          "available": false,
+          "price": 79000
+        },
+        {
+          "seat_id": 9,
+          "position": "B4",
+          "available": false,
+          "price": 79000
+        }
+      ],
+      "drinks": [
+        {
+          "id": 1,
+          "price": 199000,
+          "name": "PEANUTS SINGLE COMBO "
+        }
+      ],
+      "total": 436000,
+      "createdAt": "11/19/2023, 11:04:46 AM"
+    },
+    {
+      "id": 1700366733851,
+      "movieId": 609681,
+      "roomId": 6,
+      "movieTitle": "The Marvels",
+      "date": "21/11/2023",
+      "time": "09:00",
+      "seats": [
+        {
+          "seat_id": 13,
+          "position": "C3",
+          "available": false,
+          "price": 79000
+        },
+        {
+          "seat_id": 14,
+          "position": "C4",
+          "available": false,
+          "price": 79000
+        }
+      ],
+      "drinks": [
+        {
+          "id": 2,
+          "price": 79000,
+          "name": "PEANUTS COUPLE COMBO "
+        }
+      ],
+      "total": 237000,
+      "createdAt": "11/19/2023, 11:05:33 AM"
     }
   ],
   "rooms": [
@@ -26482,102 +26358,122 @@
         {
           "seat_id": 1,
           "position": "A1",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 2,
           "position": "A2",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 3,
           "position": "A3",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 4,
           "position": "A4",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 5,
           "position": "A5",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 6,
           "position": "B1",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 7,
           "position": "B2",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 8,
           "position": "B3",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 9,
           "position": "B4",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 10,
           "position": "B5",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 11,
           "position": "C1",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 12,
           "position": "C2",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 13,
           "position": "C3",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 14,
           "position": "C4",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 15,
           "position": "C5",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 16,
           "position": "D1",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 17,
           "position": "D2",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 18,
           "position": "D3",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 19,
           "position": "D4",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 20,
           "position": "D5",
-          "available": true
+          "available": true,
+          "price": 79000
         }
       ]
     },
@@ -26587,52 +26483,592 @@
         {
           "seat_id": 1,
           "position": "A1",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 2,
           "position": "A2",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 3,
           "position": "A3",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 4,
           "position": "A4",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 5,
           "position": "A5",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 6,
           "position": "B1",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 7,
           "position": "B2",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 8,
           "position": "B3",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 9,
           "position": "B4",
-          "available": true
+          "available": true,
+          "price": 79000
         },
         {
           "seat_id": 10,
           "position": "B5",
-          "available": true
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 11,
+          "position": "C1",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 12,
+          "position": "C2",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 13,
+          "position": "C3",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 14,
+          "position": "C4",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 15,
+          "position": "C5",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 16,
+          "position": "D1",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 17,
+          "position": "D2",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 18,
+          "position": "D3",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 19,
+          "position": "D4",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 20,
+          "position": "D5",
+          "available": true,
+          "price": 79000
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "seat_status": [
+        {
+          "seat_id": 1,
+          "position": "A1",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 2,
+          "position": "A2",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 3,
+          "position": "A3",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 4,
+          "position": "A4",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 5,
+          "position": "A5",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 6,
+          "position": "B1",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 7,
+          "position": "B2",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 8,
+          "position": "B3",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 9,
+          "position": "B4",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 10,
+          "position": "B5",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 11,
+          "position": "C1",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 12,
+          "position": "C2",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 13,
+          "position": "C3",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 14,
+          "position": "C4",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 15,
+          "position": "C5",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 16,
+          "position": "D1",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 17,
+          "position": "D2",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 18,
+          "position": "D3",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 19,
+          "position": "D4",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 20,
+          "position": "D5",
+          "available": true,
+          "price": 79000
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "seat_status": [
+        {
+          "seat_id": 1,
+          "position": "A1",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 2,
+          "position": "A2",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 3,
+          "position": "A3",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 4,
+          "position": "A4",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 5,
+          "position": "A5",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 6,
+          "position": "B1",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 7,
+          "position": "B2",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 8,
+          "position": "B3",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 9,
+          "position": "B4",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 10,
+          "position": "B5",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 11,
+          "position": "C1",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 12,
+          "position": "C2",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 13,
+          "position": "C3",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 14,
+          "position": "C4",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 15,
+          "position": "C5",
+          "available": true,
+          "price": 79000
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "seat_status": [
+        {
+          "seat_id": 1,
+          "position": "A1",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 2,
+          "position": "A2",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 3,
+          "position": "A3",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 4,
+          "position": "A4",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 5,
+          "position": "A5",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 6,
+          "position": "B1",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 7,
+          "position": "B2",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 8,
+          "position": "B3",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 9,
+          "position": "B4",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 10,
+          "position": "B5",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 11,
+          "position": "C1",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 12,
+          "position": "C2",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 13,
+          "position": "C3",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 14,
+          "position": "C4",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 15,
+          "position": "C5",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 16,
+          "position": "D1",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 17,
+          "position": "D2",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 18,
+          "position": "D3",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 19,
+          "position": "D4",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 20,
+          "position": "D5",
+          "available": true,
+          "price": 79000
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "seat_status": [
+        {
+          "seat_id": 1,
+          "position": "A1",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 2,
+          "position": "A2",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 3,
+          "position": "A3",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 4,
+          "position": "A4",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 5,
+          "position": "A5",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 6,
+          "position": "B1",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 7,
+          "position": "B2",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 8,
+          "position": "B3",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 9,
+          "position": "B4",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 10,
+          "position": "B5",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 11,
+          "position": "C1",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 12,
+          "position": "C2",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 13,
+          "position": "C3",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 14,
+          "position": "C4",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 15,
+          "position": "C5",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 16,
+          "position": "D1",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 17,
+          "position": "D2",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 18,
+          "position": "D3",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 19,
+          "position": "D4",
+          "available": true,
+          "price": 79000
+        },
+        {
+          "seat_id": 20,
+          "position": "D5",
+          "available": true,
+          "price": 79000
         }
       ]
     }
